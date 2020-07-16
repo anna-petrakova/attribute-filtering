@@ -23,16 +23,16 @@ After that, it is possible to call attributeFiltering.m function (it must be in 
 
 *img_in*: dip_image, cannot contain floating point intensities
 *attribute*: 
-	* 'area' - number of pixels in the component
-	* 'height' - maximal value in the component minus the value of the canonical node
-	* 'value' - intensity of the node in the tree
-	* 'perimeter'- number of "edges" surrounding the component
-	* 'eccentricity'
-	* 'elongation'- using bounding box
-	* 'simplicity'- area/perimeter
-	* 'compactness'- perimeter^2 / (4*PI*area)
-	* 'widthBB' - width of the bounding box
-	* 'heightBB' - height of the bounding box
+* 'area' - number of pixels in the component
+* 'height' - maximal value in the component minus the value of the canonical node
+* 'value' - intensity of the node in the tree
+* 'perimeter'- number of "edges" surrounding the component
+* 'eccentricity'
+* 'elongation'- using bounding box
+* 'simplicity'- area/perimeter
+* 'compactness'- perimeter^2 / (4*PI*area)
+* 'widthBB' - width of the bounding box
+* 'heightBB' - height of the bounding box
 
 *threshold*:
 	threshold for filtering - either one number or an array [t1, t2] specifying lower and upper threshold.
@@ -40,13 +40,13 @@ After that, it is possible to call attributeFiltering.m function (it must be in 
 	If two number are used - components having the value above first and below the second one are kept.
 
 *filter*:
-	* 'min' - minimum filtering rule
-	* 'max' - maximum filtering rule
-	* 'direct'
-	* 'subtractive'
-	* 'Viterbi' - counts only the number of changes that have to be made to make a set of decisions increasing
-	* 'weightedViterbi' - counts the weight of the changed decisions
-	* 'kSubtractive' - for hyperconnected attribute filters
+* 'min' - minimum filtering rule
+* 'max' - maximum filtering rule
+* 'direct'
+* 'subtractive'
+* 'Viterbi' - counts only the number of changes that have to be made to make a set of decisions increasing
+* 'weightedViterbi' - counts the weight of the changed decisions
+* 'kSubtractive' - for hyperconnected attribute filters
 
 *k*:
 	number that is specified only if the filtering rule is 'kSubtractive'
