@@ -22,6 +22,7 @@ After that, it is possible to call attributeFiltering.m function (it must be in 
 *img_out = attributeFiltering(img_in, attribute, threshold, filterType, k)*
 
 *img_in*: dip_image, cannot contain floating point intensities
+
 *attribute*: 
 * 'area' - number of pixels in the component
 * 'height' - maximal value in the component minus the value of the canonical node
@@ -35,9 +36,9 @@ After that, it is possible to call attributeFiltering.m function (it must be in 
 * 'heightBB' - height of the bounding box
 
 *threshold*:
-	threshold for filtering - either one number or an array [t1, t2] specifying lower and upper threshold.
-	If only one number is used - components having the value above threshold are kept. 
-	If two number are used - components having the value above first and below the second one are kept.
+threshold for filtering - either one number or an array [t1, t2] specifying lower and upper threshold.
+If only one number is used - components having the value above threshold are kept. 
+If two number are used - components having the value above first and below the second one are kept.
 
 *filter*:
 * 'min' - minimum filtering rule
